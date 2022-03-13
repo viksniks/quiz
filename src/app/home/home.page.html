@@ -1,20 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header style="z-index: 0;">
+    <ion-toolbar>
+        <ion-title>
+
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+    <ion-grid *ngIf="!started">
+        <ion-row>
+            <ion-col style="text-align: center;">Total Questions Count: 10</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="text-align: center;">Total Duration: 1 minute</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col></ion-col>
+            <ion-col>
+                <ion-button (click)="startQuiz()" expand="full">Start Quiz</ion-button>
+            </ion-col>
+            <ion-col></ion-col>
+        </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    </ion-grid>
+    <ion-list *ngIf="started">
+        <ion-grid>
+            <ion-row *ngIf="currentTime">
+                <ion-col style="text-align: center;font-weight: bold;font-size: 30px;">{{currentTime.h}}:{{currentTime.m}}:{{currentTime.s}}</ion-col>
+
+            </ion-row>
+        </ion-grid>
+        <ion-radio-group [(ngModel)]="currentQuestion.yourAns " (ionChange)="radioChanged($event)">
+            <ion-list-header>
+                <ion-label>
+                    {{currentQuestion.qestionId}}.{{currentQuestion.qestion}}
+                </ion-label>
+            </ion-list-header>
+
+            <ion-item *ngFor="let q of currentQuestion.options">
+                <ion-label>{{q}}</ion-label>
+                <ion-radio [value]="q"></ion-radio>
+            </ion-item>
+
+            <ion-toolbar>
+                <ion-icon *ngIf="currentQuestion.qestionId != '1'" (click)="prevQuestion(currentQuestion.qestionId)" slot="start" size="large" name="chevron-back-circle-outline"></ion-icon>
+                <ion-icon *ngIf="currentQuestion.qestionId != questions.length" (click)="nextQuestion(currentQuestion.qestionId)" slot="end" size="large" name="chevron-forward-circle-outline"></ion-icon>
+            </ion-toolbar>
+        </ion-radio-group>
+    </ion-list>
+    <ion-grid *ngIf="started">
+        <ion-row>
+            <ion-col></ion-col>
+            <ion-col>
+                <ion-button (click)="openResults()" expand="full">Submit</ion-button>
+            </ion-col>
+            <ion-col></ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

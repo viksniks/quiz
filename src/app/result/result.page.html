@@ -1,0 +1,26 @@
+<ion-header style="z-index: 0;">
+    <ion-toolbar>
+        <ion-title>Results</ion-title>
+        <ion-buttons (click)="close()" slot="end">
+            <ion-icon size="large" name="close"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <div *ngFor="let r of results">
+            <h4 class="ion-text-wrap">
+                {{r.qestionId}}.{{r.qestion}}
+            </h4>
+            <p>
+                Corrent Answer : <b>{{r.ans}}</b>
+            </p>
+            <p>
+                Your Answer: <b>{{(r.yourAns)?r.yourAns:""}}</b>
+            </p>
+
+        </div>
+    </ion-list>
+</ion-content>

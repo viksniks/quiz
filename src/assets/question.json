@@ -1,0 +1,140 @@
+[{
+        "qestionId": 1,
+        "levelNo": 1,
+        "qestion": "What is the color of sky ?",
+        "options": ["blue",
+            "red",
+            "yellow",
+            "green"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "blue",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 2,
+        "levelNo": 1,
+        "qestion": "How many wheels a bika have ?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "2",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 3,
+        "levelNo": 1,
+        "qestion": "How many legs birds have ?",
+        "options": [
+            "1",
+            "4",
+            "2",
+            "3"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "2",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 4,
+        "levelNo": 1,
+        "qestion": "What is your country name ?",
+        "options": [
+            "Africa",
+            "Bhutan",
+            "China",
+            "India"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "India",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 5,
+        "levelNo": 1,
+        "qestion": "What is your name ?",
+        "options": [
+            "Manoj",
+            "Sham",
+            "Jobish",
+            "Ali"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "Manoj",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 6,
+        "levelNo": 1,
+        "qestion": "What is your favourite game ?",
+        "options": [
+            "Volley",
+            "Cricket",
+            "Badminton",
+            "Hockey"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "Cricket",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 7,
+        "levelNo": 1,
+        "qestion": "Who is your Favourite Hero ?",
+        "options": [
+            "Akshya Kumar",
+            "Govinda",
+            "Rajesh Khanna",
+            "Salman Khan"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "Rajesh Khanna",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 8,
+        "levelNo": 1,
+        "qestion": "What is your Favourite Letter?",
+        "options": [
+            "E",
+            "K",
+            "L",
+            "N"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "E",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 9,
+        "levelNo": 1,
+        "qestion": "What is your School Name ?",
+        "options": [
+            "St Thomas",
+            "Vivekananda",
+            "Lancer",
+            "Stewart"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "Stewart",
+        "yourAns": ""
+    },
+    {
+        "qestionId": 10,
+        "levelNo": 1,
+        "qestion": "What is your Hobby ?",
+        "options": [
+            "Playing",
+            "Reading",
+            "Sleeping",
+            "Travelling"
+        ],
+        "date_added": "04/08/2020",
+        "ans": "Sleeping",
+        "yourAns": ""
+    }
+]

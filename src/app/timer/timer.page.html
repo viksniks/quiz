@@ -1,0 +1,26 @@
+<ion-header style="z-index: 0;">
+    <ion-toolbar>
+        <ion-title></ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+        <ion-row *ngIf="currentTime.s">
+            <ion-col style="text-align: center;font-weight: bold;font-size: 30px;">{{currentTime.h}}:{{currentTime.m}}:{{currentTime.s}}</ion-col>
+
+        </ion-row>
+    </ion-grid><br />
+    <ion-grid>
+        <ion-row>
+            <ion-col></ion-col>
+            <ion-col>
+                <ion-button expand="full" *ngIf="!interValId" (click)="startTimer()">start</ion-button>
+                <ion-button expand="full" *ngIf="interValId" (click)="stopTimer()">stop</ion-button>
+            </ion-col>
+            <ion-col></ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
